@@ -136,7 +136,7 @@ SELECT
 FROM Claustros cl
 INNER JOIN Ediciones e ON cl.id_claustro = e.Profesor_id
 INNER JOIN Materias m ON e.Materia_id = m.id_materia
-WHERE m.nombre_materiales = 'FullStack'
+WHERE m.nombre_materia = 'FullStack'
 GROUP BY cl.id_claustro, cl.Nombre_claustro
 HAVING COUNT(e.id_edicion) > 0
 ORDER BY cl.Nombre_claustro;
@@ -175,4 +175,5 @@ JOIN modalidades mod ON e.Modalidad_id = mod.id_modalidad
 INNER JOIN Claustros cl1 ON e.Profesor_id = cl1.id_claustro
 INNER JOIN Claustros cl2 ON e.Ayudante_id = cl2.id_claustro
 WHERE e.id_edicion = 1;
+
 
