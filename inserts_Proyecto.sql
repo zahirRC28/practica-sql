@@ -6,8 +6,8 @@ INSERT INTO Campus (Localizacion) VALUES ('Madrid');
 INSERT INTO modalidades (horario, tipo) VALUES ('media jornada', 'online');
 INSERT INTO modalidades (horario, tipo) VALUES ('jornada completa', 'presencial');
 
-INSERT INTO Materias (nombre_materiales) VALUES ('FullStack');
-INSERT INTO Materias (nombre_materiales) VALUES ('DataScience');
+INSERT INTO Materias (nombre_materia) VALUES ('FullStack');
+INSERT INTO Materias (nombre_materia) VALUES ('DataScience');
 
 INSERT INTO Alumnos (Nombre_alumno, Email) VALUES ('Teresa Laguna','Teresa_Laguna@gmail.com');
 INSERT INTO Alumnos (Nombre_alumno, Email) VALUES ('Estrella Murillo','Estrella_Murillo@gmail.com');
