@@ -88,7 +88,7 @@ ORDER BY m.nombre_materia, p.nombre_proyecto;
 -- PROYECTO CON MÁS "NO APTO"
 SELECT
     p.nombre_proyecto AS "Proyecto",
-    m.nombre_materiales AS "Materia",
+    m.nombre_materia AS "Materia",
     SUM(CASE WHEN p.nota = FALSE THEN 1 ELSE 0 END) AS "Total No Aptos",
     COUNT(*) AS "Total Evaluaciones"
 FROM Proyectos p
@@ -175,3 +175,4 @@ JOIN modalidades mod ON e.Modalidad_id = mod.id_modalidad
 INNER JOIN Claustros cl1 ON e.Profesor_id = cl1.id_claustro
 INNER JOIN Claustros cl2 ON e.Ayudante_id = cl2.id_claustro
 WHERE e.id_edicion = 1;
+
