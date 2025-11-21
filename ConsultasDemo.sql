@@ -169,11 +169,12 @@ SELECT
     cl1.Nombre_claustro AS "Profesor",
     cl2.Nombre_claustro AS "Ayudante"
 FROM Ediciones e
-JOIN Materias m ON e.Materia_id = m.id_materia
-JOIN Campus c ON e.Campus_id = c.id_campus
-JOIN modalidades mod ON e.Modalidad_id = mod.id_modalidad
+INNER JOIN Materias m ON e.Materia_id = m.id_materia
+INNER JOIN Campus c ON e.Campus_id = c.id_campus
+INNER JOIN modalidades mod ON e.Modalidad_id = mod.id_modalidad
 INNER JOIN Claustros cl1 ON e.Profesor_id = cl1.id_claustro
 INNER JOIN Claustros cl2 ON e.Ayudante_id = cl2.id_claustro
 WHERE e.id_edicion = 1;
+
 
 
