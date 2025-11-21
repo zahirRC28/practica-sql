@@ -24,7 +24,7 @@ CREATE TABLE modalidades (
 
 CREATE TABLE Materias(
     id_materia SERIAL PRIMARY KEY,
-    nombre_materiales VARCHAR(50)
+    nombre_materia VARCHAR(50)
 
 );
 
